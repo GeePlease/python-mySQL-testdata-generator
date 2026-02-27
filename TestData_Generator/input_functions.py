@@ -1,4 +1,4 @@
-#------- USER INPUT: Data Category
+#------- USER INPUT: Choiceof Data Category
 
 def get_data_category():
 
@@ -17,7 +17,7 @@ def get_data_category():
         return "Email-Adressen"
 
 
-#------- USER INPUT: Number of Generations
+#------- USER INPUT: Choice of Number of Generations
 
 def get_number_generations(data_category):
 

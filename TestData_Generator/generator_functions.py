@@ -1,4 +1,5 @@
 import itertools as it
+import input_functions as inptf
 
 
 """
@@ -13,14 +14,13 @@ def gen_number(data_amount):
     count = 1
 
     data_category = 'Zahlen'
-    amount = inptf.get_number_generations(data_category)
 
     for i in range(data_amount):
         numbers.append(count)
         count += 1
 
-    for num in numbers:
-        print(num)
+    return numbers
+
 
 '''
 =================
@@ -38,8 +38,7 @@ def gen_phone(data_amount):
         phone = phone1 + str(i)
         phone_numbers.append(phone)
 
-    for number in phone_numbers:
-        print(number)
+    return phone_numbers
 
 """
 ================
@@ -59,12 +58,7 @@ def gen_name(data_amount):
         count += 1
         names.append(name)
 
-    # print name
-    for name in names:
-        print(name)
-
     return names
-
 """
 ===============
     EMAIL GENERATOR 
@@ -72,7 +66,6 @@ def gen_name(data_amount):
 """
 
 def gen_email(data_amount):
-
 
     mails = []
     domains = ["@gmail.com", "@outlook.com", "@gmx.at"]
@@ -88,5 +81,4 @@ def gen_email(data_amount):
     for name in names:
         mails.append(name + next(cycled_domains))
 
-    for mail in mails:
-        print(mail)
+    return mails

@@ -1,6 +1,7 @@
 
 import input_functions as inptf
 import generator_functions as gf
+import output_functions as of
 
 
 def show_menu():
@@ -9,13 +10,17 @@ def show_menu():
         data_amount = inptf.get_number_generations(data_category)
 
         if data_category == "Zahlen":
-            gf.gen_name(data_amount)
+            list_of_numbers = gf.gen_number(data_amount)
+            of.print_generated_data(data_category, list_of_numbers)
 
         if data_category == "Telefonnummern":
-            gf.gen_phone(data_amount)
+            list_of_phone_num = gf.gen_phone(data_amount)
+            of.print_generated_data(data_category, list_of_phone_num)
 
         if data_category == "Namen":
-            gf.gen_name(data_amount)
+            list_of_names = gf.gen_name(data_amount)
+            of.print_generated_data(data_category, list_of_names)
 
         if data_category == "Email-Adressen":
-            gf.gen_email(data_amount)
+            list_of_mails = gf.gen_email(data_amount)
+            of.print_generated_data(data_category, list_of_mails)
