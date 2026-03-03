@@ -6,8 +6,10 @@ import output_functions as of
 
 def show_menu():
 
+        #user input 4 data category and number of generations, avoiding none
         data_category = inptf.get_data_category()
-        data_amount = inptf.get_number_generations(data_category)
+        if data_category is not None:
+            data_amount = inptf.get_number_generations(data_category)
 
         if data_category == "Zahlen":
             list_of_numbers = gf.gen_number(data_amount)

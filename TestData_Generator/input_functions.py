@@ -5,22 +5,28 @@ def get_data_category():
     print("\nTestdaten - Kategorie:\n")
     print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5] - Orte\n")
 
+    #TODO: exception um eingabefehler abzufangen
     data_category = int(input("Auswahl: "))
 
     if data_category == 1:
         return "Zahlen"
+
     elif data_category == 2:
         return "Telefonnummern"
+
     elif data_category == 3:
         return "Namen"
+
     elif data_category == 4:
         return "Email-Adressen"
+
     elif data_category == 5:
         return "Orte"
 
     else:
-        print("Falsche Eingabe. Wiederholen")
+        print("\nFalsche Eingabe. Wiederholen!")
         return
+
 
 #------- USER INPUT: Choice of Number of Generations
 

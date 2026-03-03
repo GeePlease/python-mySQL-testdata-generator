@@ -32,9 +32,9 @@ _______________________________________________________
 """
 
 
+#TODO: Ausgabe als insertfähigen Datensatz: exakte SQL Insert taugliche Ausgabe-Formatierung in print
 #TODO: Planung (-> UML Diagramm)??
-#TODO: Exakte SQL Insert taugliche Ausgabe-Formatierung in print
-#TODO: Basic falsche Eingaben sauber abfangen
+#TODO: basic Eingabevalidierungen/ falsche Eingaben abfangen (keine nones!) (try exceipt)
 
 
 while True:
