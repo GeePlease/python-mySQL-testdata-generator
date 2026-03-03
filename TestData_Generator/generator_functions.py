@@ -1,5 +1,5 @@
 import itertools as it
-import input_functions as inptf
+
 
 
 """
@@ -27,7 +27,6 @@ def gen_number(data_amount):
     PHONE GENERATOR 
 =================
 '''
-
 def gen_phone(data_amount):
 
     phone_numbers = []
@@ -35,7 +34,7 @@ def gen_phone(data_amount):
 
     #--create full phone_numbers by appending numbers in range of amount
     for i in range(data_amount):
-        phone = phone1 + str(i)
+        phone = phone1 + str(i+1)
         phone_numbers.append(phone)
 
     return phone_numbers
@@ -48,14 +47,16 @@ def gen_phone(data_amount):
 
 def gen_name(data_amount):
 
-    #TODO: Miniliste Vornamen, Miniliste Nachnamen, durchcyclen (?)
-    count = 1
+    #leichte Abwechslung durch unterschiedlich lange Listen
+    first_names=["Heribert", "Luca", "Emma", "Jessica"]
+    last_names=["Pokemüller", "Potter", "Skywalker", "Zoidberg", "Jones"]
+    cycled_1names = it.cycle(first_names)
+    cycled_2names = it.cycle(last_names)
     names = []
 
     # generate name
     for i in range(data_amount):
-        name = "Vorname Nachname " + str(count)
-        count += 1
+        name = next(cycled_1names)  +" " +  next(cycled_2names)
         names.append(name)
 
     return names
@@ -82,3 +83,25 @@ def gen_email(data_amount):
         mails.append(name + next(cycled_domains))
 
     return mails
+
+
+"""
+=================
+    LOCATION GENERATOR 
+=================
+"""
+
+def gen_location(data_amount):
+
+    locations1=["Klein", "Alt", "Neu", "Unter"]
+    locations2=["kirchen", "dorf", "hausen", "stein", "burg"]
+    cycled_locations1 = it.cycle(locations1)
+    cycled_locations2 = it.cycle(locations2)
+    locations_list = []
+
+    # generate name
+    for i in range(data_amount):
+        location= next(cycled_locations1)  +  next(cycled_locations2)
+        locations_list.append(location)
+
+    return locations_list

@@ -13,14 +13,20 @@ def show_menu():
             list_of_numbers = gf.gen_number(data_amount)
             of.print_generated_data(data_category, list_of_numbers)
 
-        if data_category == "Telefonnummern":
+        elif data_category == "Telefonnummern":
             list_of_phone_num = gf.gen_phone(data_amount)
             of.print_generated_data(data_category, list_of_phone_num)
 
-        if data_category == "Namen":
+        elif data_category == "Namen":
             list_of_names = gf.gen_name(data_amount)
             of.print_generated_data(data_category, list_of_names)
 
-        if data_category == "Email-Adressen":
+        elif data_category == "Email-Adressen":
             list_of_mails = gf.gen_email(data_amount)
             of.print_generated_data(data_category, list_of_mails)
+
+        elif data_category == "Orte":
+            list_of_locations = gf.gen_location(data_amount)
+            of.print_generated_data(data_category, list_of_locations)
+
+

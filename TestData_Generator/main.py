@@ -10,15 +10,16 @@ _______________________________________________________
 Small tool to generate different kinds of
 test data in realistic formats to use for testing
 sql scripts, e.g.: names, numbers, email-
-addresses...
+addresses etc.. 
+
 
 MAIN FEATURES:
 _______________________________________________________
 [x] name generator
 [x] number generator
-[x] phone number generator
+[x] phone number generator (max 999)
 [x] email address generator
-[] location generator
+[x] location generator
 [] date generator
 [] yes/no generator
 
@@ -27,11 +28,13 @@ _______________________________________________________
 [] flexible full test dataset generator
 [] dataset export as csv file
 [] automatic mysql test data insertion (read+insert csv)
+
 """
 
-#TODO: Emailadressen überarbeiten (braucht Namensliste zur Generierung aber ohne inkluderte Namensausgabe!)
-#TODO: Planung (-> UML Diagramm)
-#TODO: Exakte SQL Insert taugliche Ausgabe-Formatierung in print (evtl. Funktion)
+
+#TODO: Planung (-> UML Diagramm)??
+#TODO: Exakte SQL Insert taugliche Ausgabe-Formatierung in print
+#TODO: Basic falsche Eingaben sauber abfangen
 
 
 while True:

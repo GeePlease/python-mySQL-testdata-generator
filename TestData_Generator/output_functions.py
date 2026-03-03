@@ -5,3 +5,5 @@
 def print_generated_data(data_category,item_list):
     for item in item_list:
         print(item)
+
+    # TODO: output formatierung gemäß datentyp

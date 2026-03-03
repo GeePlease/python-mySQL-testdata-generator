@@ -1,9 +1,9 @@
-#------- USER INPUT: Choiceof Data Category
+#------- USER INPUT: Choice of Data Category
 
 def get_data_category():
 
     print("\nTestdaten - Kategorie:\n")
-    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n")
+    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5] - Orte\n")
 
     data_category = int(input("Auswahl: "))
 
@@ -15,7 +15,12 @@ def get_data_category():
         return "Namen"
     elif data_category == 4:
         return "Email-Adressen"
+    elif data_category == 5:
+        return "Orte"
 
+    else:
+        print("Falsche Eingabe. Wiederholen")
+        return
 
 #------- USER INPUT: Choice of Number of Generations
 
