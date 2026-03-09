@@ -21,7 +21,7 @@ _______________________________________________________
 [x] email address generator
 [x] location generator
 [x] date generator
-[] yes/no generator
+[x] yes/no generator
 
 OPTIONAL FEATURES:
 _______________________________________________________

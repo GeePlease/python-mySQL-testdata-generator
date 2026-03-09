@@ -6,10 +6,17 @@ import output_functions as of
 
 def show_menu():
 
-        #user input 4 data category and number of generations, avoiding none
-        data_category = inptf.get_data_category()
-        if data_category is not None:
-            data_amount = inptf.get_number_generations(data_category)
+        #user input 4 data category and number of generations, avoiding none --> TODO: what if none?
+        try:
+            data_category = inptf.get_data_category()
+        except:
+            print("Falsche Eingabe. Wiederholen!")
+            return
+
+
+        data_amount = inptf.get_number_generations(data_category)
+
+
 
         if data_category == "Zahlen":
             list_of_numbers = gf.gen_number(data_amount)
@@ -35,4 +42,11 @@ def show_menu():
             list_of_dates = gf.gen_date(data_amount)
             of.print_generated_data(data_category, list_of_dates)
 
+        elif data_category == "Ja/ Nein":
+            list_of_choices = gf.gen_yes_no(data_amount)
+            of.print_generated_data(data_category, list_of_choices)
+
+        else:
+            print("Falsche Eingabe. Wiederholen!")
+            return
 

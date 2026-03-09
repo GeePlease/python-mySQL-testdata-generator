@@ -1,5 +1,8 @@
-import itertools as it
+#TODO: wenn zu viele, aufteilen/ auslagern: alpha gen, num gen, bool gen
 
+
+import itertools as it
+import random as rn
 
 
 """
@@ -128,3 +131,21 @@ def gen_date(data_amount):
         date_list.append(date)
 
     return date_list
+
+
+"""
+=================
+    YES/NO GENERATOR 
+=================
+"""
+
+def gen_yes_no(data_amount):
+
+    choices = ["ja", "nein"]
+    choices_list = []
+
+    for i in range(data_amount):
+        chosen = rn.choice(choices)
+        choices_list.append(chosen)
+
+    return choices_list
