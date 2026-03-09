@@ -2,21 +2,26 @@
 import input_functions as inptf
 import generator_functions as gf
 import output_functions as of
+from error_functions import input_error_warning
 
 
 def show_menu():
 
-        #user input 4 data category and number of generations, avoiding none --> TODO: what if none?
+       #user input 4 data category and number of generations, avoiding none caused errors
         try:
             data_category = inptf.get_data_category()
         except:
-            print("Falsche Eingabe. Wiederholen!")
+            #from error functions
+            input_error_warning()
             return
 
+        # catch none before asking for data amount input
+        if data_category is None:
+            input_error_warning()
+            return
 
+        # user input for amount of generations
         data_amount = inptf.get_number_generations(data_category)
-
-
 
         if data_category == "Zahlen":
             list_of_numbers = gf.gen_number(data_amount)
@@ -47,6 +52,7 @@ def show_menu():
             of.print_generated_data(data_category, list_of_choices)
 
         else:
-            print("Falsche Eingabe. Wiederholen!")
+            #from error_functions
+            input_error_warning()
             return
 

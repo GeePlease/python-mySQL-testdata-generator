@@ -1,3 +1,4 @@
+
 #------- USER INPUT: Choice of Data Category
 
 def get_data_category():
@@ -30,7 +31,6 @@ def get_data_category():
         return "Ja/ Nein"
 
     else:
-        print("\nFalsche Eingabe. Wiederholen!")
         return
 
 
