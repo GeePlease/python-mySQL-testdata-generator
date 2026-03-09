@@ -31,4 +31,8 @@ def show_menu():
             list_of_locations = gf.gen_location(data_amount)
             of.print_generated_data(data_category, list_of_locations)
 
+        elif data_category == "Daten":
+            list_of_dates = gf.gen_date(data_amount)
+            of.print_generated_data(data_category, list_of_dates)
+
 

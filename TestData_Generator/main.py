@@ -20,7 +20,7 @@ _______________________________________________________
 [x] phone number generator (max 999)
 [x] email address generator
 [x] location generator
-[] date generator
+[x] date generator
 [] yes/no generator
 
 OPTIONAL FEATURES:

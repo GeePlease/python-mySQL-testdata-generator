@@ -105,3 +105,26 @@ def gen_location(data_amount):
         locations_list.append(location)
 
     return locations_list
+
+"""
+=================
+    DATE GENERATOR 
+=================
+"""
+def gen_date(data_amount):
+
+    years = ['1995-', '2000-', '2008-', '2016-', '2020-', '2022-', '2026-']
+    months = ['01-', '02-', '03-', '04-', '05-', '06-', '07-', '08-', '09-', '10-', '11-', '12-']
+    days = ['06', '08', '10', '12', '03', '20', '10', '11', '01', '15', '28']
+
+    cycled_years = it.cycle(years)
+    cycled_months = it.cycle(months)
+    cycled_days = it.cycle(days)
+
+    date_list = []
+
+    for i in range(data_amount):
+        date = next(cycled_years) + next(cycled_months) + next(cycled_days)
+        date_list.append(date)
+
+    return date_list
