@@ -1,4 +1,4 @@
-#TODO: wenn zu viele, aufteilen/ auslagern: alpha gen, num gen, bool gen
+#TODO: wenn zu viele, aufteilen/ auslagern: alpha gen, num gen, alphanum gen, bool gen....
 
 
 import itertools as it

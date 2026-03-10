@@ -4,9 +4,8 @@
 def get_data_category():
 
     print("\nTestdaten - Kategorie:\n")
-    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5] - Orte\n[6] - Daten\n[7] - Ja/Nein\n")
+    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5] - Orte\n[6] - Daten\n[7] - Ja/ Nein\n")
 
-    #TODO: exception um eingabefehler abzufangen
     data_category = int(input("Auswahl: "))
 
     if data_category == 1:
@@ -38,5 +37,6 @@ def get_data_category():
 
 def get_number_generations(data_category):
 
+    #TODO: exception um eingabefehler abzufangen
     amount = int(input(f"Wie viele {data_category} generieren?: \n"))
     return amount
