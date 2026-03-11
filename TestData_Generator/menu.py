@@ -17,14 +17,17 @@ def show_menu():
         input_error_warning()
         return
 
-    # user input for amount of generations, avoiding any input errors
 
+    # user input for amount of generations, avoiding any input errors
     data_amount = 1
     try:
         data_amount = inptf.get_number_generations(data_category)
     except:
         input_error_warning()
         return
+
+
+    # data categories
 
     if data_category == "Zahlen":
         list_of_numbers = gf.gen_number(data_amount)

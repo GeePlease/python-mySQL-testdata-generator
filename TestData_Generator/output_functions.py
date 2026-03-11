@@ -5,6 +5,6 @@
 def print_generated_data(data_category,item_list):
     print("")
     for item in item_list:
-        print(item)
+        print(f"{item}")
 
-    # TODO: output formatierung gemäß datentyp??
+    # TODO: korrekte sql taugliche output formatierung gemäß datentyp! (zahlen u stringformate unterscheiden)
