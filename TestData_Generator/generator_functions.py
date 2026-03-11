@@ -6,9 +6,9 @@ import random as rn
 
 
 """
-=================
+=======================
     NUMBER GENERATOR
-=================
+=======================
 """
 
 def gen_number(data_amount):
@@ -26,9 +26,9 @@ def gen_number(data_amount):
 
 
 '''
-=================
+=======================
     PHONE GENERATOR 
-=================
+=======================
 '''
 def gen_phone(data_amount):
 
@@ -43,9 +43,9 @@ def gen_phone(data_amount):
     return phone_numbers
 
 """
-================
+======================
     NAME GENERATOR
-================
+======================
 """
 
 def gen_name(data_amount):
@@ -64,9 +64,9 @@ def gen_name(data_amount):
 
     return names
 """
-===============
+=====================
     EMAIL GENERATOR 
-===============
+=====================
 """
 
 def gen_email(data_amount):
@@ -89,9 +89,9 @@ def gen_email(data_amount):
 
 
 """
-=================
+=======================
     LOCATION GENERATOR 
-=================
+=======================
 """
 
 def gen_location(data_amount):
@@ -110,9 +110,9 @@ def gen_location(data_amount):
     return locations_list
 
 """
-=================
+=======================
     DATE GENERATOR 
-=================
+=======================
 """
 def gen_date(data_amount):
 
@@ -134,9 +134,9 @@ def gen_date(data_amount):
 
 
 """
-=================
+=======================
     YES/NO GENERATOR 
-=================
+=======================
 """
 
 def gen_yes_no(data_amount):

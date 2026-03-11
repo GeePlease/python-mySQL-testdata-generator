@@ -8,6 +8,7 @@ from error_handling import input_error_warning
 def show_menu():
 
     #user input 4 data category and number of generations, avoiding none caused errors
+
     data_category = "Zahlen"
 
     try:
@@ -17,15 +18,15 @@ def show_menu():
         input_error_warning()
         return
 
-
     # user input for amount of generations, avoiding any input errors
+
     data_amount = 1
+
     try:
         data_amount = inptf.get_number_generations(data_category)
     except:
         input_error_warning()
         return
-
 
     # data categories
 

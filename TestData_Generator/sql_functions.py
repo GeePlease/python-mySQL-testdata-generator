@@ -13,24 +13,24 @@ def insert_column_string(table_name, column_name, item_list):
     print(f"INSERT INTO {table_name} ({column_name}) VALUES")
 
     for item in item_list[:-1]:
-            print(f"({item}),")
-    print (f"({item_list[-1]}) \n;")
+            print(f"('{item}'),")
+    print (f"('{item_list[-1]}');")
 
 insert_column_string(table_name, column_name, item_list)
 
 
 
-'''
-#TODO: sql_column_values ergänzen
+
 table_name = 'partygaeste'
+column_name = 'ID'
 item_list = [1,2,3,4,5,6,7,8,9,10]
 
-#prototype for single column num inserts
 def insert_column_num(table_name, column_name, item_list):
-    print(f"INSERT INTO {table_name} {column_name} VALUES")
-    for item in item_list:
-        print(f"({item}),")
-    print(";")
+
+    print(f"INSERT INTO {table_name} ({column_name}) VALUES")
+
+    for item in item_list[:-1]:
+            print(f"({item}),")
+    print (f"({item_list[-1]});")
 
 insert_column_num(table_name, column_name, item_list)
-'''
