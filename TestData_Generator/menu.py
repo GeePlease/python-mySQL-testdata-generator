@@ -2,7 +2,7 @@
 import input_functions as inptf
 import generator_functions as gf
 import output_functions as of
-from error_functions import input_error_warning
+from error_handling import input_error_warning
 
 
 def show_menu():
