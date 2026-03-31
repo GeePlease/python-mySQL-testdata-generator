@@ -63,6 +63,7 @@ def gen_name(data_amount):
         names.append(name)
 
     return names
+
 """
 =====================
     EMAIL GENERATOR 
@@ -86,7 +87,6 @@ def gen_email(data_amount):
         mails.append(name + next(cycled_domains))
 
     return mails
-
 
 """
 =======================
@@ -114,6 +114,7 @@ def gen_location(data_amount):
     DATE GENERATOR 
 =======================
 """
+
 def gen_date(data_amount):
 
     years = ['1995-', '2000-', '2008-', '2016-', '2020-', '2022-', '2026-']
@@ -132,7 +133,6 @@ def gen_date(data_amount):
 
     return date_list
 
-
 """
 =======================
     YES/NO GENERATOR 
@@ -149,3 +149,48 @@ def gen_yes_no(data_amount):
         choices_list.append(chosen)
 
     return choices_list
+
+"""
+=======================
+    WEIGHT GENERATOR
+=======================
+"""
+def gen_weight(data_amount):
+    kilo_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    gram_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    cycled_kilos = it.cycle(kilo_list)
+    cycled_gram_list = it.cycle(gram_list)
+
+    weight_list = []
+
+    for i in range (data_amount):#
+        kilo = next(cycled_kilos)
+        gram = next(cycled_gram_list)
+        weight = f"{kilo}.{gram}"
+        weight_list.append(weight)
+
+    return weight_list
+
+"""
+=======================
+    PRICE GENERATOR
+=======================
+"""
+def gen_price(data_amount):
+    euro_list = [2, 4, 6, 7, 9, 12, 14, 16, 19, 29, 49, 98]
+    cent_list = [00, 49, 50, 90, 95, 99]
+
+    cycled_euro_list = it.cycle(euro_list)
+    cycled_cent_list = it.cycle(cent_list)
+
+    price_list = []
+
+
+    for i in range(data_amount):
+        euro = next(cycled_euro_list)
+        cent = next(cycled_cent_list)
+        price =  f"{euro}.{cent}"
+        price_list.append(price)
+
+    return price_list

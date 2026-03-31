@@ -18,7 +18,6 @@ VALUES
 (3, 'Peter Müller', 'peter.mueller@outlook.com', '1990-07-21');
 
 
-
 '''
 
 item_list = ['Heribert Pokemüller', 'Jessica Jones']

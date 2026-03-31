@@ -58,6 +58,14 @@ def show_menu():
         list_of_choices = gf.gen_yes_no(data_amount)
         of.print_generated_data(data_category, list_of_choices)
 
+    elif data_category == "Gewicht":
+        list_of_weights = gf.gen_weight(data_amount)
+        of.print_generated_data(data_category, list_of_weights)
+
+    elif data_category == "Preis":
+        list_of_prices = gf.gen_price(data_amount)
+        of.print_generated_data(data_category, list_of_prices)
+
     else:
         #from error_functions
         input_error_warning()

@@ -1,6 +1,6 @@
 
 
-#------- OUTPUT: all Items in generated data list of items in data category
+#------- OUTPUT: all Items in generated data list of items in chosen data category
 
 def print_generated_data(data_category,item_list):
     print("")

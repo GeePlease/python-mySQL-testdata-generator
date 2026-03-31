@@ -4,7 +4,8 @@
 def get_data_category():
 
     print("\nTestdaten - Kategorie:\n")
-    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5] - Orte\n[6] - Daten\n[7] - Ja/ Nein\n")
+    print("[1] - Zahlen\n[2] - Telefonnummern\n[3] - Namen\n[4] - Emailadressen\n[5]"
+          " - Orte\n[6] - Daten\n[7] - Ja/ Nein\n[8] - Gewicht\n[9] - Preis\n")
 
     data_category = int(input("Auswahl: "))
 
@@ -28,6 +29,12 @@ def get_data_category():
 
     elif data_category == 7:
         return "Ja/ Nein"
+
+    elif data_category == 8:
+        return "Gewicht"
+
+    elif data_category == 9:
+        return "Preis"
 
     else:
         return

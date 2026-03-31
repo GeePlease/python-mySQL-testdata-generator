@@ -17,3 +17,4 @@ Insert Befehl:
 
 
 4 verbindung zur datenbank query direkt in mysql/datagrip über python data generator
+

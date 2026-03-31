@@ -22,6 +22,8 @@ _______________________________________________________
 [x] location generator
 [x] date generator
 [x] yes/no generator
+[x] weight (kg, 1.f)
+[x] price (€, 2.f)
 
 OPTIONAL FEATURES:
 _______________________________________________________
