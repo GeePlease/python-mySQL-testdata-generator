@@ -32,15 +32,17 @@ _______________________________________________________
 
 """
 
-
 #TODO: Ausgabe als insertfähigen Datensatz: exakte SQL Insert taugliche Ausgabe-Formatierung in print
 #TODO: Planung (-> Diagramm)?
-#TODO: basic Eingabevalidierungen/ falsche Eingaben abfangen (keine nones!) (try except)
+#TODO: basic Eingabevalidierungen/ falsche Eingaben abfangen (keine nones!!!!) (try except)
 
 
 while True:
 
     menu.show_menu()
+
+
+
 
 
 

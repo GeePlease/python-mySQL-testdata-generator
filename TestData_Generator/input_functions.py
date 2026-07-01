@@ -40,7 +40,7 @@ def get_data_category():
         return
 
 
-#------- USER INPUT: Choice of Number of Generations
+#------- USER INPUT: Choice of Number of Generations per data category
 
 def get_number_generations(data_category):
 

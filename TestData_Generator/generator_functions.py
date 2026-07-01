@@ -186,7 +186,6 @@ def gen_price(data_amount):
 
     price_list = []
 
-
     for i in range(data_amount):
         euro = next(cycled_euro_list)
         cent = next(cycled_cent_list)
