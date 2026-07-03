@@ -1,29 +1,39 @@
+# Test Data Generator for MySQL (and other DBMS)
 
-#Test Data Generator for MySQL (and other DBMS)
+## Description
 
+A small tool to generate realistic test data for SQL databases. It can be used to create sample data for testing SQL scripts, database schemas, and applications.
 
-DESCRIPTION:
-_______________________________________________________
-Small tool to generate different kinds of
-test data in realistic formats to use for testing
-sql scripts, e.g.: names, numbers, email-
-addresses etc.. 
+The generator supports various data types such as names, numbers, email addresses, phone numbers, locations, dates, and more.
 
+---
 
-MAIN FEATURES:
-_______________________________________________________
-[x] name generator
-[x] number generator
-[x] phone number generator (max 999)
-[x] email address generator
-[x] location generator
-[x] date generator
-[x] yes/no generator
-[x] weight (kg, 1.f)
-[x] price (€, 2.f)
-[ ] copy/paste ready test data output (in sql format)
+## Features
 
-FUTURE FEATURES:
-_______________________________________________________
-[] flexible full test dataset generator
-[] automatic mysql test data insertion (read+insert csv)
+### ✅ Currently implemented
+
+- [x] Name generator
+- [x] Number generator
+- [x] Phone number generator (up to 999 numbers)
+- [x] Email address generator
+- [x] Location generator
+- [x] Date generator
+- [x] Yes/No generator
+- [x] Weight generator (kg, 1 decimal place)
+- [x] Price generator (€ / 2 decimal places)
+- [ ] SQL-ready copy & paste output
+
+---
+
+## Planned Features
+
+- [ ] Flexible full test dataset generator
+- [ ] Automatic MySQL test data insertion (CSV import)
+
+---
+
+## Tool for:
+
+- Filling small development databases with sample data
+- Creating educational demo datasets
+- testing small (educational) projects with database connection
