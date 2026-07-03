@@ -1,6 +1,6 @@
-=================================
-  Test Data Generator for MySQL (and other DBMS)
-=================================
+
+#Test Data Generator for MySQL (and other DBMS)
+
 
 DESCRIPTION:
 _______________________________________________________
